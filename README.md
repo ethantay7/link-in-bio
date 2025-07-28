@@ -1,6 +1,6 @@
 # Link-in-Bio Page
 
-Live: [[https://yourusername.github.io/link-in-bio](https://yourusername.github.io/link-in-bio)](https://ethantay7.github.io/link-in-bio/)
+Live: (https://ethantay7.github.io/link-in-bio/)
 
 ## What it is:
 A personal landing card with links, contact info, and a dark mode toggle.
