@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Link Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Ethan Taylor's personal link page — contact info, projects, and social links.">
+    <meta property="og:title" content="Ethan Taylor | Link-in-Bio">
+    <meta property="og:description" content="Check out my projects, socials, and how to reach me.">
+    <meta property="og:image" content="your-photo.jpg">
+
+</head>
+
+<body>
+    <div class="card">
+        <img src="profile.jpg" alt="Profile" class="avatar" />
+        <h1>Ethan Taylor</h1>
+        <p>Web Dev in Progress 🚀</p>
+        <div class="links">
+            <a href="https://github.com/ethantay7" target="_blank">GitHub</a>
+            <a href="https://www.youtube.com/@et.taylor7">YouTube</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+            <button id="theme-toggle">Toggle Dark Mode</button>
+
+            <div class="contact">
+                <p>📧 Email: ethantay773@gmail.com</p>
+                <p>💬 Discord: ethantta1592</p>
+                <p>📞 Phone: (308) 995-7656</p>
+            </div>
+        </div>
+        <script>
+            const toggleBtn = document.getElementById("theme-toggle");
+            const body = document.body;
+
+            // Load theme preference on page load
+            if (localStorage.getItem("theme") === "dark") {
+                body.classList.add("dark");
+            }
+
+            toggleBtn.addEventListener("click", () => {
+                body.classList.toggle("dark");
+
+                // Save preference
+                if (body.classList.contains("dark")) {
+                    localStorage.setItem("theme", "dark");
+                } else {
+                    localStorage.setItem("theme", "light");
+                }
+            });
+        </script>
+
+</body>
+
+</html>
